@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background: rgb(15, 15, 15);
+    color: rgb(245, 245, 245);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    padding: 1rem;
+    background: red;
+}
+
+.container input {
+    padding: .5rem;
+    font-size: 1.2em;
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid gray;
+    transition: .5s;
+    z-index: 1;
+    background: transparent;
+
+}
+
+.container span {
+    display: flex;
+    position: absolute;
+    left: 1.5rem;
+    top: 1.7rem;
+    color: rgb(245, 245, 245);
+    transition: .5s;
+}
+
+.container input:focus ~ span {
+    font-size: .8em;
+    top: .5rem;
+    color: rgb(245, 245, 245);
+}
+
+.container i {xx
+    position: absolute;
+    bottom: 1rem;
+    width: 0%;
+    height: 0rem;
+    transition: .4s;
+}
+
+.container input:focus ~ i {
+    height: 2.10rem;
+    width: 88%;
+    background: linear-gradient(45deg, red, blue, red);
+}
